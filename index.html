@@ -73,6 +73,15 @@
     </nav>
 
     <!-- ===================== HERO SECTION ===================== -->
+    <style>
+        .hero-section {
+            background-image: url('asset/img/bg2.jpg'); /* Ganti dengan path gambar latar belakang */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Mengatur tinggi section hero */
+            color: white; /* Mengatur warna teks */
+        }
+    </style>
     <section id="home" class="hero-section">
       <div
         class="container d-flex flex-column align-items-center justify-content-center"
@@ -98,7 +107,7 @@
           document.addEventListener("DOMContentLoaded", function () {
             const ig = document.querySelector('a[href*="instagram.com"]');
             if (ig) {
-              ig.style.alignSelf = "flex-end"; // geser ke kanan dalam container flex-column
+              ig.style.alignSelf = "center"; // geser ke tengah dalam container flex-column
             }
           });
         </script>
@@ -108,7 +117,7 @@
           class="btn btn-outline-light d-flex align-items-center gap-2 mb-3"
         >
           <img
-            src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg"
+            src="asset/img/ig.webp"
             alt="Instagram"
             style="width: 24px; height: 24px"
           />
@@ -223,20 +232,20 @@
     <!-- ===================== PROJECTS SECTION ===================== -->
     <section id="projects" class="section-dark py-5">
       <div class="container">
-        <h2 class="section-title text-center mb-5">Proyek</h2>
+        <h2 class="section-title text-center mb-5">Project</h2>
         <div class="row g-4">
-          <!-- Proyek 1 -->
+          <!-- Project   1 -->
           <div class="col-md-4">
             <div class="project-card card h-100 shadow-sm">
               <img
-                src="https://via.placeholder.com/350x200"
+                src="asset/img/portofolio.png"
                 class="card-img-top"
-                alt="Proyek 1"
+                alt="Project 1"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">Prodi Saya</h5>
+                <h5 class="card-title fw-bold">project 1</h5>
                 <p class="card-text text-muted">
-                  Deskripsi singkat tentang proyek pertama Anda.
+                  web portofolio sederhana untuk menampilkan karya dan keterampilan saya.
                 </p>
                 <div class="d-flex gap-2 mt-3">
                   <span class="badge bg-primary">HTML</span>
@@ -251,14 +260,14 @@
           <div class="col-md-4">
             <div class="project-card card h-100 shadow-sm">
               <img
-                src="https://via.placeholder.com/350x200"
+                src="asset/img/kelas.png"
                 class="card-img-top"
                 alt="Proyek 2"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">Proyek 2</h5>
+                <h5 class="card-title fw-bold">Project 2</h5>
                 <p class="card-text text-muted">
-                  Deskripsi singkat tentang proyek kedua Anda.
+                  web kelas sederhana di buat untuk memudahkan pembelajaran, jadwal dan tugas.
                 </p>
                 <div class="d-flex gap-2 mt-3">
                   <span class="badge bg-warning">UI/UX</span>
@@ -277,7 +286,7 @@
                 alt="Proyek 3"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">Proyek 3</h5>
+                <h5 class="card-title fw-bold">Project 3</h5>
                 <p class="card-text text-muted">
                   Deskripsi singkat tentang proyek ketiga Anda.
                 </p>
@@ -345,40 +354,53 @@
 
     <!-- ===================== CONTACT SECTION ===================== -->
     <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="mb-4">Kontak</h2>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nama</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Nama Anda"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="email@contoh.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Pesan</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="4"
-              placeholder="Tulis pesan Anda"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Kirim</button>
-        </form>
+  <div class="container">
+    <h2 class="mb-4">Kontak</h2>
+
+    <form action="kontak.php" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="nama"
+          placeholder="Nama Anda"
+          required
+        />
       </div>
-    </section>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="email@contoh.com"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Pesan</label>
+        <textarea
+          class="form-control"
+          id="message"
+          name="pesan"
+          rows="4"
+          placeholder="Tulis pesan Anda"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="button">
+        kirim
+        <span class="button-border"></span>
+      </button>
+    </form>
+  </div>
+</section>
 
     <!-- ===================== FOOTER ===================== -->
     <footer class="bg-primary text-white text-center py-3">
