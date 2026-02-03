@@ -12,6 +12,8 @@
     <!-- Menghubungkan ke file CSS eksternal kamu sendiri -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles.css" /> <!-- filepath: d:\portofolio jadi\styles.css -->
+    <!-- Font Awesome untuk icon sosial media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <!-- ===================== NAVBAR ===================== -->
@@ -42,19 +44,19 @@
           <ul class="navbar-nav ms-auto">
             <!-- ms-auto = margin-start otomatis (menu ke kanan) -->
             <li class="nav-item">
-              <a class="nav-link" href="#home">Beranda</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Tentang</a>
+              <a class="nav-link" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Proyek</a>
+              <a class="nav-link" href="#projects">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#certificate">Kegiatan</a>
+              <a class="nav-link" href="#certificate">Activity</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
 
@@ -95,33 +97,27 @@
           <span class="professional-tag">Backend Developer</span>
           <span class="professional-tag">Web 3</span>
         </div>
-        <!-- Sosial Media Instagram -->
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const ig = document.querySelector('a[href*="instagram.com"]');
-            if (ig) {
-              ig.style.alignSelf = "center"; // geser ke tengah dalam container flex-column
-            }
-          });
-        </script>
-        <a
-          href="https://www.instagram.com/oly_zee2?igsh=OHdsNnJ4d2VqMWdh"
-          target="_blank"
-          class="btn btn-outline-light d-flex align-items-center gap-2 mb-3"
-        >
-          <img
-            src="asset/img/ig.webp"
-            alt="Instagram"
-            style="width: 24px; height: 24px"
-          />
-          oly_zee2
-        </a>
+        <!-- Ikon Sosial Media -->
+        <div class="social-icons d-flex align-items-center gap-2 mb-3">
+          <a href="https://github.com/romzimuzit" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+            <i class="fab fa-github" style="font-size: 24px;"></i>
+          </a>
+          <a href="https://x.com/RMuzitta71748" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+            <i class="fab fa-twitter" style="font-size: 24px;"></i>
+          </a>
+          <a href="https://www.instagram.com/oly_zee2?igsh=OHdsNnJ4d2VqMWdh" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+            <i class="fab fa-instagram" style="font-size: 24px;"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/romzi-muzitta-da-wah-4a56973a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-outline-light d-flex align-items-center gap-2">
+            <i class="fab fa-linkedin-in" style="font-size: 24px;"></i>
+          </a>
+        </div>
       </div>
     </section>
 
     <section id="about" class="py-5 bg-white">
       <div class="container">
-        <h2 class="text-center mb-4">Tentang Saya</h2>
+        <h2 class="text-center mb-4">About Me</h2>
 
         <div class="row g-4 align-items-center">
           <!-- kartu profil -->
@@ -133,14 +129,14 @@
                 <p class="text-muted small mb-3">Web Developer • Backend Developer • Web 3</p>
 
                 <div class="d-flex justify-content-center gap-2 mb-3">
-                  <a href="#contact" class="btn btn-outline-primary btn-sm" aria-label="Hubungi saya">Hubungi</a>
-                  <a href="asset/img/CV kerja romzi.docx" class="btn btn-primary btn-sm" download aria-label="Unduh CV">Unduh CV</a>
+                  <a href="#contact" class="btn btn-outline-primary btn-sm" aria-label="Hubungi saya">Contact Me</a>
+                  <a href="asset/img/CV kerja romzi.docx" class="btn btn-primary btn-sm" download aria-label="Unduh CV">Download CV</a>
                 </div>
 
                 <ul class="list-unstyled small mb-0 text-start">
                   <li>📍 Indonesia</li>
-                  <li>🎓 Mahasiswa Rekayasa Perangkat Lunak</li>
-                  <li>⚡ Fokus: Web development & web 3</li>
+                  <li>🎓 Student Software Engineering</li>
+                  <li>⚡ Focus: Web development & web 3</li>
                 </ul>
               </div>
             </div>
@@ -149,12 +145,12 @@
           <!-- konten tentang, keterampilan, dan sorotan -->
           <div class="col-lg-8">
             <p class="lead mb-3">
-              Saya fokus membangun aplikasi web yang responsif, cepat, dan mudah digunakan. Senang merancang antarmuka yang rapi serta menulis kode yang terstruktur dan dapat dipelihara.
+              I focus on building responsive, fast, and user-friendly web applications. I enjoy designing clean interfaces and writing structured, maintainable code.
             </p>
 
-            <!-- keterampilan -->
+            <!-- skills -->
             <div class="mb-4">
-              <h6 class="mb-2">Keterampilan Utama</h6>
+              <h6 class="mb-2">Key Skills</h6>
 
               <div class="mb-2">
                 <div class="d-flex justify-content-between">
@@ -189,30 +185,30 @@
 
             <!-- sorotan singkat -->
             <div>
-              <h6 class="mb-2">Sorotan</h6>
+              <h6 class="mb-2">Highlights</h6>
               <div class="row gx-2 gy-2">
                 <div class="col-sm-6">
                   <div class="p-3 border rounded h-100">
-                    <strong>Proyek Mandiri</strong>
-                    <div class="text-muted small">Membangun situs responsif untuk portofolio dan demo aplikasi.</div>
+                    <strong>Independent Projects</strong>
+                    <div class="text-muted small">Building responsive sites for portfolios and app demos.</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="p-3 border rounded h-100">
-                    <strong>Kolaborasi Tim</strong>
-                    <div class="text-muted small">Berpengalaman bekerja dengan tim lintas disiplin pada proyek kampus.</div>
+                    <strong>Team Collaboration</strong>
+                    <div class="text-muted small">Experienced working with cross-disciplinary teams on campus projects.</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="p-3 border rounded h-100">
-                    <strong>Belajar Terus</strong>
-                    <div class="text-muted small">Konsisten mengikuti kursus dan praktik teknologi terbaru.</div>
+                    <strong>Continuous Learning</strong>
+                    <div class="text-muted small">Consistently taking courses and practicing the latest technologies.</div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="p-3 border rounded h-100">
-                    <strong>Dampak Sosial</strong>
-                    <div class="text-muted small">Berkomitmen mengembangkan solusi yang bermanfaat bagi komunitas.</div>
+                    <strong>Social Impact</strong>
+                    <div class="text-muted small">Committed to developing solutions that benefit the community.</div>
                   </div>
                 </div>
               </div>
@@ -225,7 +221,7 @@
     <!-- ===================== PROJECTS SECTION ===================== -->
     <section id="projects" class="section-dark py-5">
       <div class="container">
-        <h2 class="section-title text-center mb-5">Project</h2>
+        <h2 class="section-title text-center mb-5">Projects</h2>
         <div class="row g-4">
           <!-- Project   1 -->
           <div class="col-md-4">
@@ -236,9 +232,9 @@
                 alt="Project 1"
               />
               <div class="card-body">
-                <h5 class="card-title fw-bold">project 1</h5>
+                <h5 class="card-title fw-bold">Project 1</h5>
                 <p class="card-text text-muted">
-                  web portofolio sederhana untuk menampilkan karya dan keterampilan saya.
+                   Simple web portfolio to showcase my work and skills. <a href="https://romzimuzit.github.io/portofolio/">Visit Project</a>
                 </p>
                 <div class="d-flex gap-2 mt-3">
                   <span class="badge bg-primary">HTML</span>
@@ -260,7 +256,7 @@
               <div class="card-body">
                 <h5 class="card-title fw-bold">Project 2</h5>
                 <p class="card-text text-muted">
-                  web kelas sederhana di buat untuk memudahkan pembelajaran, jadwal dan tugas.
+                  web kelas sederhana di buat untuk memudahkan pembelajaran, jadwal dan tugas. <a href="https://romzimuzit.github.io/WEBKELAS/">Visit Project</a>
                 </p>
                 <div class="d-flex gap-2 mt-3">
                   <span class="badge bg-warning">UI/UX</span>
@@ -281,7 +277,7 @@
               <div class="card-body">
                 <h5 class="card-title fw-bold">Project 3</h5>
                 <p class="card-text text-muted">
-                  Deskripsi singkat tentang proyek ketiga Anda.
+                  A brief description of your third project.
                 </p>
                 <div class="d-flex gap-2 mt-3">
                   <span class="badge bg-secondary">Backend</span>
@@ -297,7 +293,7 @@
     <!-- ===================== CERTIFICATE SECTION ===================== -->
     <section id="certificate" class="py-5 bg-light">
       <div class="container">
-        <h2 class="mb-4">kegiatan</h2>
+        <h2 class="mb-4">Activities</h2>
         <div class="row g-4">
           <!-- Sertifikat 1 -->
           <div class="col-md-4">
@@ -307,10 +303,10 @@
                 class="card-img-top"
                 alt="Sertifikat 1"
               />
-              <div class="card-body">
-                <h5 class="card-title">Sertifikat Webinar</h5>
-                <p class="card-text">Diberikan oleh ID.Networkers, 2025.</p>
-              </div>
+                <div class="card-body">
+                <h5 class="card-title">Webinar Certificate</h5>
+                <p class="card-text">Issued by ID.Networkers, 2025.</p>
+                </div>
             </div>
           </div>
           <!-- Sertifikat 2 -->
@@ -321,10 +317,10 @@
                 class="card-img-top"
                 alt="Sertifikat 2"
               />
-              <div class="card-body">
-                <h5 class="card-title">Sertifikat webinar</h5>
-                <p class="card-text">Diberikan oleh ID.Networkers, 2026.</p>
-              </div>
+                <div class="card-body">
+                <h5 class="card-title">Webinar Certificate</h5>
+                <p class="card-text">Issued by ID.Networkers, 2026.</p>
+                </div>
             </div>
           </div>
           <!-- Sertifikat 3 -->
@@ -335,10 +331,10 @@
                 class="card-img-top"
                 alt="Sertifikat 3"
               />
-              <div class="card-body">
-                <h5 class="card-title">Sertifikat Pemrograman Dasar</h5>
-                <p class="card-text">Diberikan oleh Udemy, 2021.</p>
-              </div>
+                <div class="card-body">
+                <h5 class="card-title">Basic Programming Certificate</h5>
+                <p class="card-text">Issued by Udemy, 2021.</p>
+                </div>
             </div>
           </div>
         </div>
@@ -348,17 +344,17 @@
     <!-- ===================== CONTACT SECTION ===================== -->
     <section id="contact" class="py-5">
   <div class="container">
-    <h2 class="mb-4">Kontak</h2>
+    <h2 class="mb-4">Contact</h2>
 
     <form action="kontak.php" method="POST">
       <div class="mb-3">
-        <label for="name" class="form-label">Nama</label>
+        <label for="name" class="form-label">Name</label>
         <input
           type="text"
           class="form-control"
           id="name"
-          name="nama"
-          placeholder="Nama Anda"
+          name="name"
+          placeholder="Your Name"
           required
         />
       </div>
@@ -370,25 +366,25 @@
           class="form-control"
           id="email"
           name="email"
-          placeholder="email@contoh.com"
+          placeholder="email@example.com"
           required
         />
       </div>
 
       <div class="mb-3">
-        <label for="message" class="form-label">Pesan</label>
+        <label for="message" class="form-label">Message</label>
         <textarea
           class="form-control"
           id="message"
-          name="pesan"
+          name="message"
           rows="4"
-          placeholder="Tulis pesan Anda"
+          placeholder="Write your message"
           required
         ></textarea>
       </div>
 
       <button type="submit" class="button">
-        kirim
+        Send
         <span class="button-border"></span>
       </button>
     </form>
@@ -398,7 +394,7 @@
     <!-- ===================== FOOTER ===================== -->
     <footer class="bg-primary text-white text-center py-3">
       <div class="container">
-        &copy; 2025 Romzi Muzitta Da'wah. Semua hak dilindungi.
+        &copy; 2025 Romzi Muzitta Da'wah. All rights reserved.
       </div>
     </footer>
 

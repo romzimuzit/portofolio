@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
   if (ig) {
     ig.style.alignSelf = 'center'; 
   }
-ne
   // Fungsi util untuk menghapus status aktif
   function clearActive() {
     document.querySelectorAll('.navbar-nav .nav-link').forEach(function(l) {
